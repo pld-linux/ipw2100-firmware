@@ -6,6 +6,7 @@ Release:	1
 License:	distributable
 Group:		System Environment/Kernel
 Source0:	http://cache-www.intel.com/cd/00/00/09/63/96377_96377.zip
+# Source0-md5:	817b987a89e811b87384968ffe15615f
 URL:		http://ipw2100.sourceforge.net/firmware.php
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
