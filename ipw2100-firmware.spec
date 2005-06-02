@@ -2,7 +2,7 @@ Summary:	Firmware for the Intel(R) PRO/Wireless 2100 Driver
 Summary(pl):	Firmware dla sterownika do kart Intel(R) PRO/Wireless 2100
 Name:		ipw2100-firmware
 Version:	1.3
-Release:	1
+Release:	2
 License:	distributable
 Group:		System Environment/Kernel
 Source0:	http://bughost.org/firmware/ipw2100-fw-1.3.tgz	
@@ -28,14 +28,9 @@ gunzip -c ipw2100-fw-%{version}.tgz | tar -xf -
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_sysconfdir}/firmware
-install -d $RPM_BUILD_ROOT%{_libdir}/hotplug/firmware
+install -d $RPM_BUILD_ROOT/lib/firmware
 
-install -p *.fw $RPM_BUILD_ROOT%{_sysconfdir}/firmware
-cd $RPM_BUILD_ROOT%{_sysconfdir}/firmware
-for file in *.fw; do
-	ln -s %{_sysconfdir}/firmware/$file $RPM_BUILD_ROOT%{_libdir}/hotplug/firmware
-done
+install -p *.fw $RPM_BUILD_ROOT/lib/firmware
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,5 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE
-%{_sysconfdir}/firmware/*.fw
-%{_libdir}/hotplug/firmware/*.fw
+/lib/firmware/*.fw
