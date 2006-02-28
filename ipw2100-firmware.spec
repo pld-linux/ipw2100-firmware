@@ -4,8 +4,8 @@ Name:		ipw2100-firmware
 Version:	1.3
 Release:	2
 License:	distributable
-Group:		System Environment/Kernel
-Source0:	http://bughost.org/firmware/ipw2100-fw-1.3.tgz	
+Group:		Base/Kernel
+Source0:	http://bughost.org/firmware/ipw2100-fw-%{version}.tgz
 # Source0-md5:	46aa75bcda1a00efa841f9707bbbd113
 URL:		http://ipw2100.sourceforge.net/firmware.php
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
