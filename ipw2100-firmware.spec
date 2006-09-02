@@ -13,13 +13,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains the firmware for the ipw-2100 driver. Usage of
 the firmware is subject to the terms contained in
-%{_defaultdocdir}/%{name}-%{version}/LICENSE*. Please read the license
+%{_docdir}/%{name}-%{version}/LICENSE*. Please read the license
 carefully.
 
 %description -l pl
 Ten pakiet zawiera firmware dla sterownika ipw-2100. Mo¿na go u¿ywaæ
 na warunkach zawartych w pliku
-%{_defaultdocdir}/%{name}-%{version}/LICENSE*. Proszê uwa¿nie
+%{_docdir}/%{name}-%{version}/LICENSE*. Proszê uwa¿nie
 przeczytaæ licencjê.
 
 %prep
