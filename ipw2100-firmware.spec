@@ -24,7 +24,6 @@ przeczytać licencję.
 
 %prep
 %setup -q -c
-gunzip -c ipw2100-fw-%{version}.tgz | tar -xf -
 
 %install
 rm -rf $RPM_BUILD_ROOT
