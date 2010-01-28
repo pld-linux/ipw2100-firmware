@@ -2,12 +2,13 @@ Summary:	Firmware for the Intel(R) PRO/Wireless 2100 Driver
 Summary(pl.UTF-8):	Firmware dla sterownika do kart Intel(R) PRO/Wireless 2100
 Name:		ipw2100-firmware
 Version:	1.3
-Release:	3
+Release:	4
 License:	distributable
 Group:		Base/Kernel
 Source0:	http://bughost.org/firmware/ipw2100-fw-%{version}.tgz
 # Source0-md5:	46aa75bcda1a00efa841f9707bbbd113
 URL:		http://ipw2100.sourceforge.net/firmware.php
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
